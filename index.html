@@ -80,16 +80,7 @@
 			<a href="" class="button button-dark" id="openComment">hear me</a><br />
 		</div>
 		<br />
-		<main class="form-comment" id="commentId">
-			<form id="form">
-				<label for="comment"><strong> Comment Bellow </strong></label>
-				<br />
-				<input type="text" name="comment" id="comment" placeholder="type..." />
-				<button type="submit" class="btn-send">
-					<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-				</button>
-			</form>
-		</main>
+		
 	</section>
 
 	<!-- footerpage -->
@@ -97,12 +88,25 @@
 	<footer>
 		<div class="container">
 			<div class="col-3">
-				<p>
-					lorem lorem ipsum dolor sit amet lorem ipsum dolor lorem ipsum dolor
-					lorem ipsum dolor.
-				</p>
-			</div>
+				<main class="form-comment" id="commentId">
+			<form id="form">
+				<label for="comment"><strong> Comment Bellow </strong></label>
 
+		<div class="choose">
+        <button class="email"><strong>New Message</strong><i>Angga: Bagus web nya </i><span class="close" id="btnNotFound">X</span> </button>
+        <button class="Whatsapp"><strong>New Message</strong><i>Angga: Bagus web nya </i><span class="close" id="btnSucces">X</span> </button>
+        <button class="github"><strong>New Message</strong><i>Angga: Bagus web nya </i><span class="close" id="btnError">X</span> </button>
+    	</div>
+				<br />
+				<input type="text" name="comment" id="comment" placeholder="type..." />
+				<button type="submit" class="btn-send">
+					<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+				</button>
+			</form>
+		</main>
+				
+			</div>
+			<beside class="footer">
 			<div class="col-1">
 				<ul class="unstyled-list">
 					<li><strong>Angga</strong></li>
@@ -133,6 +137,7 @@
 				</ul>
 			</div>
 		</div>
+	</beside>
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"

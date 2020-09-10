@@ -147,61 +147,52 @@ header::after {
 	/*   display: none; */
 }
 
-/* button-choose-about */
+/* notification */
 .choose {
-	margin-top: 20px;
+	margin-top: 0;
 }
 
 .email {
 	background-color: rgb(253, 236, 0);
-	border: none;
-	border-radius: 5px;
-	width: 80%;
-	height: 30px;
 	color: black;
 	font-weight: bold;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
-	margin-left: 10%;
-	position: absolute;
-	margin-top: 120px;
+	margin-top: 10px;
+	width: 90%;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	
 }
 
 .Whatsapp {
-	background-color: green;
-	border: none;
-	border-radius: 5px;
-	margin-top: 10px;
-	font-weight: bold;
-	width: 80%;
-	height: 30px;
+	background-color: rgb(253, 236, 0);
 	color: black;
+	font-weight: bold;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
-	margin-left: 10%;
-	position: absolute;
-	margin-top: 120px;
-	top: 60px;
+	margin-top: 20px;
+	width: 90%;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
 }
 
 .github {
-	background-color: red;
-	border: none;
-	border-radius: 5px;
-	margin-top: 10px;
-	width: 80%;
-	height: 30px;
+	background-color: rgb(253, 236, 0);
 	color: black;
 	font-weight: bold;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
-	margin-left: 10%;
-	position: absolute;
-	margin-top: 120px;
-	top: 100px;
+	margin-top: 30px;
+	width: 90%;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
 }
 
 .close {
@@ -688,7 +679,6 @@ nav a:focus {
 	}
 }
 
-
 /* action
 =================== */
 
@@ -696,7 +686,6 @@ nav a:focus {
 	background-color: #eeeeee;
 	padding: 5em 0;
 }
-
 
 /* Footer
 =================== */
@@ -706,4 +695,7 @@ footer {
 	color: #fff;
 	text-align: left;
 	padding: 5em 0;
+}
+.footer{
+	border-top: 1px solid #000000;
 }
