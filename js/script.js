@@ -100,6 +100,15 @@ function addList(e) {
 
   li.appendChild(document.createTextNode(input.value));
 
-  isiTodoList.appendChild(li);
+  for (let i = 0; i < li.length; i++) {
+    if (li[i] === 0) {
+      alert('isi pak')
+    }else{
+      alert(
+        isiTodoList.appendChild(li));
+    }
+  }
 
 }
+
+//or and

@@ -16,7 +16,7 @@ body {
 
 /* aside page */
 /* Aside Column */
-.right-column {
+aside .right-column {
 	width: 25%;
 	float: right;
 	padding-left: 20px;
@@ -131,7 +131,7 @@ button i {
 	margin-left: 20px;
 	float: left;
 	background-color: yellow;
-	width:90%;
+	width: 90%;
 }
 
 /* Column system
@@ -243,18 +243,20 @@ header::after {
 	border: none;
 }
 
-.close {
+button .close {
 	color: black;
 	font-weight: bold;
 	font-size: 20px;
-	margin-top: -20px;
-	margin-left: 420px;
+	margin-top: -30px;
+	margin-left: 310px;
 }
+
 
 /* Navbar */
 
 .site-nav--open {
 	clip-path: circle(250% at top right);
+	margin: 0;
 	/*   display: block; */
 }
 
@@ -341,39 +343,42 @@ header::after {
 		display: none;
 	}
 
+	.close {
+		margin-left: 220px;
+	}
 
 	.left-column,
 	.right-column {
-	  width: 100%;
-	  padding: 0px;
+		width: 100%;
+		padding: 0px;
 	}
-	/* aside */
-	
 
-/* Aside Column */
-.right-column {
-	width: 25%;
-	float: right;
-	padding-left: 20px;
-  }
-  
-  .img-icon {
-	margin-left: -2px;
-	margin-top: -10px;
-  }
-  
-  .btn {
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-  }
-  
-  
-  .btnComment {
-	background-color: transparent;
-	border: none;
-	position: absolute;
-  }
+
+	/* aside */
+
+	.right-column {
+		width: 25%;
+		float: right;
+		padding-left: 20px;
+	}
+
+	.img-icon {
+		margin-left: -2px;
+		margin-top: -10px;
+	}
+
+	.btn {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+
+
+	.btnComment {
+		background-color: transparent;
+		border: none;
+		position: absolute;
+	}
 
 
 	/*looping*/
@@ -430,6 +435,9 @@ header::after {
 
 	[class^=col-]:last-child {
 		padding-right: 0;
+	}
+	.close {
+		margin-left: 120px;
 	}
 
 	.col-3 {
