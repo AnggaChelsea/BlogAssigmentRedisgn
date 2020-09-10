@@ -152,7 +152,7 @@ header::after {
 	margin-top: 0;
 }
 
-.email {
+.angga {
 	background-color: rgb(253, 236, 0);
 	color: black;
 	font-weight: bold;
@@ -167,7 +167,7 @@ header::after {
 	
 }
 
-.Whatsapp {
+.badru {
 	background-color: rgb(253, 236, 0);
 	color: black;
 	font-weight: bold;
@@ -181,7 +181,7 @@ header::after {
 	border: none;
 }
 
-.github {
+.irfan{
 	background-color: rgb(253, 236, 0);
 	color: black;
 	font-weight: bold;
@@ -197,10 +197,10 @@ header::after {
 
 .close {
 	color: black;
-	margin-top: -20px;
-	margin-left: 320px;
 	font-weight: bold;
 	font-size: 20px;
+	margin-top:-20px;
+	margin-left:420px;
 }
 
 /* Navbar */
@@ -292,6 +292,8 @@ header::after {
 	.menu-toggle {
 		display: none;
 	}
+
+
 
 	/*looping*/
 	#article {
