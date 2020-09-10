@@ -56,6 +56,9 @@ $("#form").on("submit", function (event) {
   $(this).children("#comment").val();
 });
 
+
+
+
 //notifications
 $(document).ready(function () {
   $('.close').on('click', function (event) {
@@ -66,7 +69,37 @@ $(document).ready(function () {
 
       if ($('.choose').children().length === 0) {
         $('.choose').hide();
+      } //slice comment
+      const sliceValueComment = document.getElementById('comment');
+      sliceValueComment.addEventListener('input', funcSlice);
+
+      function funcSlice(event) {
+        if (this.value === 10) {
+          console.log("hey berhasuk")
+        }
       }
     })
   })
 })
+
+//list on blogpage
+const formTodo = document.getElementById('formTodo');
+const input = document.getElementById('input');
+const isiTodoList = document.getElementById('isiTodoList');
+
+formTodo.addEventListener('submit', addList);
+
+function addList(e) {
+  e.preventDefault();
+
+  //  membuat li elemet
+  const li = document.createElement('li');
+
+  //membuat class
+  li.className = `list-group li-dom`
+
+  li.appendChild(document.createTextNode(input.value));
+
+  isiTodoList.appendChild(li);
+
+}
