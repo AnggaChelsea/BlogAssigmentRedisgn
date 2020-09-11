@@ -90,6 +90,13 @@ function myReadMore() {
     moreText.style.display = "inline";
   }
 }
+//like
+let Like = 0;
+
+function addLike() {
+  Like += 1;
+  document.getElementById("like").innerHTML = Like;
+}
 
 //notifications
 $(document).ready(function () {
