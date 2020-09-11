@@ -354,7 +354,31 @@ button .close {
 	}
 
 
-	/* aside */
+	/* aside / sidebar */
+
+	.aside{
+		position: relative;
+		display: block;
+		float: right;
+		margin-top:-320px;
+	}
+	.commentPage{
+		color: rgb(5, 245, 5);
+		font-weight: bold;
+	}
+
+	.home-about-textbox-aside{
+		position: relative;
+		display: block;
+		float: right;
+		margin-top:-320px;
+	}
+	.isiComment{
+		margin-top:10px;
+		width: 100%;
+		height: 40px;
+		background-color:gray
+	}
 
 	.right-column {
 		width: 25%;

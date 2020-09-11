@@ -56,8 +56,31 @@ $("#form").on("submit", function (event) {
   $(this).children("#comment").val();
 });
 
+//reply comment on Home Page
 
+$("#form-comment").on("submit", function (event) {
+  event.preventDefault();
+  const inputToComment = $(this).children("#need").val();
+  const classInput = `
+  <br /">
+  <div class="isiComment">
+  <span class="isi"><i class="fa fa-user-circle"></i> ${inputToComment}</span>
+  </div
 
+  `;
+  $(this).after(classInput);
+  $(this).children("#need").val();
+});
+
+//membuat built in functions
+const inputValue = document.getElementById("need");
+const lenghtValue = inputValue.length;
+
+if (lenghtValue === 12) {
+  document.write(`<i class="gg-arrow-align-h"></i>`)
+} else {
+  document.write("Too many words")
+}
 
 //notifications
 $(document).ready(function () {
@@ -103,7 +126,7 @@ function addList(e) {
   for (let i = 0; i < li.length; i++) {
     if (li[i] === 0) {
       alert('isi pak')
-    }else{
+    } else {
       alert(
         isiTodoList.appendChild(li));
     }
