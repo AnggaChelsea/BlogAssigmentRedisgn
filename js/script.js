@@ -42,7 +42,7 @@ $(document).ready(function () {
   }
 })
 
-//jquery comment
+//jquery comment on footer
 
 $("#form").on("submit", function (event) {
   event.preventDefault();
@@ -56,17 +56,16 @@ $("#form").on("submit", function (event) {
   $(this).children("#comment").val();
 });
 
-//reply comment on Home Page
+//comment on Home Page
 
 $("#form-comment").on("submit", function (event) {
   event.preventDefault();
-  const inputToComment = $(this).children("#need").val();
+  const inputComment = $(this).children("#need").val();
   const classInput = `
   <br /">
   <div class="isiComment">
   <span class="isi"><i class="fa fa-user-circle"></i> ${inputToComment}</span>
   </div
-
   `;
   $(this).after(classInput);
   $(this).children("#need").val();
@@ -90,7 +89,7 @@ function myReadMore() {
     moreText.style.display = "inline";
   }
 }
-//like
+//cick add like
 let Like = 0;
 
 function addLike() {
@@ -108,7 +107,9 @@ $(document).ready(function () {
 
       if ($('.choose').children().length === 0) {
         $('.choose').hide();
-      } //slice comment
+      } 
+      
+      //slice comment
       const sliceValueComment = document.getElementById('comment');
       sliceValueComment.addEventListener('input', funcSlice);
 
