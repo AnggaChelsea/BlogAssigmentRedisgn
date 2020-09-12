@@ -41,22 +41,47 @@ $(document).ready(function () {
     $('.portfolio').append(loopImage);
   }
 })
+//comment time
+// days and time
+let time = new Date;
+
+let days = ('minggu', 'senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu')
+let allDay = time.days;
+if (allDay === 0) {
+  day = ('minggu')
+} else if (allDay === 1) {
+  day = ('senin')
+} else if (allDay === 2) {
+  day = ('selasa')
+} else if (allDay === 3) {
+  day = ('rabu')
+} else if (allDay === 4) {
+  day = ('kamis')
+} else if (allDay === 5) {
+  day = ('jumat')
+} else {
+  day = ('sabtu')
+}
+
+
+let hours = time.getHours();
+let minutes = time.getMinutes();
+let seconds = time.getSeconds();
+
+let getAll = ` ${day}:${hours}:${minutes}:${seconds}`;
+
 
 //jquery comment on footer
 
 $("#form").on("submit", function (event) {
   event.preventDefault();
   const input = $(this).children("#comment").val();
-  const hasilInput = `
-  <div class="head-comment">
-  <p class="isi-comment">${input}</p>
-  </div>
-  `;
-  $(this).after(hasilInput);
+  $('#isi-comment').append(`<span class="isi-comment">
+  ${getAll} : ${input} <a href="aboutMe.html"><i class="fa fa-paper-plane"></i></a></span><br/>`);
   $(this).children("#comment").val();
 });
 
-//comment on Home Page
+//comment in AboutPage
 
 $("#form-comment").on("submit", function (event) {
   event.preventDefault();
@@ -109,15 +134,6 @@ $(document).ready(function () {
         $('.choose').hide();
       }
 
-      //slice comment
-      const sliceValueComment = document.getElementById('comment');
-      sliceValueComment.addEventListener('input', funcSlice);
-
-      function funcSlice() {
-        if (this.value === 10) {
-          console.log("hey berhasuk")
-        }
-      }
     })
   })
 })
@@ -150,5 +166,3 @@ function addList(e) {
   }
 
 }
-
-//or and
