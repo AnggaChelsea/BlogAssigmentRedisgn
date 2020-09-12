@@ -107,13 +107,13 @@ $(document).ready(function () {
 
       if ($('.choose').children().length === 0) {
         $('.choose').hide();
-      } 
-      
+      }
+
       //slice comment
       const sliceValueComment = document.getElementById('comment');
       sliceValueComment.addEventListener('input', funcSlice);
 
-      function funcSlice(event) {
+      function funcSlice() {
         if (this.value === 10) {
           console.log("hey berhasuk")
         }
