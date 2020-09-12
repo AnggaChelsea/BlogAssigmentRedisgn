@@ -6,27 +6,26 @@ $(".menu-toggle").click(function () {
 
 //looping image
 const image = [{
-    link: './postPage.html',
-    name: 'web Design Makrket'
+    link: "./postPage.html",
+    name: "web Design Makrket",
   },
   {
-    link: './postPage.html',
-    name: 'web Design company profile'
+    link: "./postPage.html",
+    name: "web Design company profile",
   },
   {
-    link: './postPage.html',
-    name: 'web Design e-commerce'
+    link: "./postPage.html",
+    name: "web Design e-commerce",
   },
   {
-    link: './postPage.html',
-    name: 'web Design Angga'
+    link: "./postPage.html",
+    name: "web Design Angga",
   },
   {
-    link: './postPage.html',
-    name: 'web Design Angga Startup'
+    link: "./postPage.html",
+    name: "web Design Angga Startup",
   },
-
-]
+];
 $(document).ready(function () {
   for (let i = 0; i < image.length; i++) {
     const loopImage = `
@@ -38,31 +37,30 @@ $(document).ready(function () {
     </figcaption>
   </figure>
     `;
-    $('.portfolio').append(loopImage);
+    $(".portfolio").append(loopImage);
   }
-})
+});
 //comment time
 // days and time
-let time = new Date;
+let time = new Date();
 
-let days = ('minggu', 'senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu')
+let days = ("minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu");
 let allDay = time.days;
 if (allDay === 0) {
-  day = ('minggu')
+  day = "minggu";
 } else if (allDay === 1) {
-  day = ('senin')
+  day = "senin";
 } else if (allDay === 2) {
-  day = ('selasa')
+  day = "selasa";
 } else if (allDay === 3) {
-  day = ('rabu')
+  day = "rabu";
 } else if (allDay === 4) {
-  day = ('kamis')
+  day = "kamis";
 } else if (allDay === 5) {
-  day = ('jumat')
+  day = "jumat";
 } else {
-  day = ('sabtu')
+  day = "sabtu";
 }
-
 
 let hours = time.getHours();
 let minutes = time.getMinutes();
@@ -70,13 +68,12 @@ let seconds = time.getSeconds();
 
 let getAll = ` ${day}:${hours}:${minutes}:${seconds}`;
 
-
 //jquery comment on footer
 
 $("#form").on("submit", function (event) {
   event.preventDefault();
   const input = $(this).children("#comment").val();
-  $('#isi-comment').append(`<span class="isi-comment">
+  $("#isi-comment").append(`<span class="isi-comment">
   ${getAll} : ${input} <a href="aboutMe.html"><i class="fa fa-paper-plane"></i></a></span><br/>`);
   $(this).children("#comment").val();
 });
@@ -96,7 +93,21 @@ $("#form-comment").on("submit", function (event) {
   $(this).children("#need").val();
 });
 
-//membuat built in functions
+//according Review Our Question
+let tabAccordion = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < tabAccordion.length; i++) {
+  tabAccordion[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
 //ReadMore
 function myReadMore() {
@@ -124,45 +135,35 @@ function addLike() {
 
 //notifications
 $(document).ready(function () {
-  $('.close').on('click', function (event) {
+  $(".close").on("click", function (event) {
     const selectForDelete = $(this).parent();
 
     selectForDelete.slideUp(200, function () {
       selectForDelete.remove();
 
-      if ($('.choose').children().length === 0) {
-        $('.choose').hide();
+      if ($(".choose").children().length === 0) {
+        $(".choose").hide();
       }
-
-    })
-  })
-})
+    });
+  });
+});
 
 //list on blogpage
-const formTodo = document.getElementById('formTodo');
-const input = document.getElementById('input');
-const isiTodoList = document.getElementById('isiTodoList');
+const formTodo = document.getElementById("formTodoMe");
+const input = document.getElementById("TodoMe");
+const isiTodoList = document.getElementById("isiTodoList");
 
-formTodo.addEventListener('submit', addList);
+formTodo.addEventListener("submit", addList);
 
 function addList(e) {
   e.preventDefault();
 
   //  membuat li elemet
-  const li = document.createElement('li');
+  const li = document.createElement("li");
 
   //membuat class
-  li.className = `list-group li-dom`
+  li.className = `list-group li-dom`;
 
   li.appendChild(document.createTextNode(input.value));
-
-  for (let i = 0; i < li.length; i++) {
-    if (li[i] === 0) {
-      alert('isi pak')
-    } else {
-      alert(
-        isiTodoList.appendChild(li));
-    }
-  }
-
+  console.log(li);
 }

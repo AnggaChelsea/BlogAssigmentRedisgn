@@ -319,6 +319,31 @@ button .close {
 
 @media (min-width: 700px) {
 
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
+
 	.menu-toggle {
 		display: none;
 	}
@@ -354,6 +379,46 @@ button .close {
 	.isi-comment a{
 		color: white;
 	}
+	.fa-twitter{
+		color:rgb(0, 255, 221);
+	}
+	.fa-facebook{
+		color: rgb(234, 234, 245);
+	}
+	.fa-linkedin{
+		color:blue;
+	}
+	.fa-google{
+		color:red;
+	}
+	/* According ViewUs */
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
+	  .panel p{
+		color:white;
+	  }
 
 	/* aside / sidebar */
 
@@ -435,6 +500,30 @@ button .close {
 
 @media (min-width: 40rem) {
 
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
 
 	.imageHeader img {
 		position: absolute;
@@ -547,6 +636,31 @@ p:last-of-type {
 
 @media (min-width:60rem) {
 
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
+
 	p {
 		font-size: 1.2rem;
 		line-height: 1.6;
@@ -555,7 +669,7 @@ p:last-of-type {
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+		
 	}
 
 	.title {
@@ -576,6 +690,32 @@ p:last-of-type {
 }
 
 @media (min-width: 60rem) {
+
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
+
 	.button {
 		font-size: 1.5rem;
 	}
@@ -659,6 +799,31 @@ nav a:focus {
 		float: left;
 	}
 
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
+
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
@@ -705,6 +870,30 @@ nav a:focus {
 
 
 @media (min-width: 60rem) {
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
 	.home-hero {
 		height: 100vh;
 		padding-top: 35vh;
@@ -746,6 +935,30 @@ nav a:focus {
 	h1 {
 		font-size: 2rem;
 	}
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
 
 	.imageHeader img {
 		position: absolute;
@@ -833,6 +1046,32 @@ nav a:focus {
 }
 
 @media (min-width: 37rem) {
+
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
+
 	.port-item {
 		width: 50%;
 		float: left;
@@ -846,6 +1085,32 @@ nav a:focus {
 }
 
 @media (min-width: 60rem) {
+
+	.accordion {
+		background-color: rgba(3, 7, 2, 0.562);
+		color: rgb(221, 17, 228);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		margin: 10px;
+	  }
+	  
+	  .active, .accordion:hover {
+		background-color: #ccc; 
+	  }
+	  
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+	  }
+
 	.port-item {
 		width: 33.3333334%;
 		overflow: hidden;
