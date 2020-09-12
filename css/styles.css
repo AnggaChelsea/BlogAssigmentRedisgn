@@ -494,8 +494,9 @@ button .close {
 }
 .headerAboutMe{
 	position: relative;
-	width:100%;
+	width:90%;
 	background-color:gray;
+	margin:0 auto;
 }
 
 /* typography */
