@@ -113,7 +113,7 @@ for (i = 0; i < tabAccordion.length; i++) {
 function myReadMore() {
   let dots = document.getElementById("dots");
   let moreText = document.getElementById("more");
-  let btnText = document.getElementById("myBtn");
+  let btnText = document.getElementById("btnReadMore");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -125,6 +125,7 @@ function myReadMore() {
     moreText.style.display = "inline";
   }
 }
+
 //cick add like
 let Like = 0;
 
@@ -148,9 +149,9 @@ $(document).ready(function () {
   });
 });
 
-//list on blogpage
+//list on postReview
 const formTodo = document.getElementById("formTodoMe");
-const input = document.getElementById("TodoMe");
+const inputTodo = document.getElementById("TodoMe");
 const isiTodoList = document.getElementById("isiTodoList");
 
 formTodo.addEventListener("submit", addList);
@@ -164,6 +165,6 @@ function addList(e) {
   //membuat class
   li.className = `list-group li-dom`;
 
-  li.appendChild(document.createTextNode(input.value));
+  li.appendChild(document.createTextNode(inputTodo.value));
   console.log(li);
 }

@@ -17,34 +17,8 @@ body {
 
 /* aside page */
 /* Aside Column */
-aside .right-column {
-	width: 25%;
-	float: right;
-	padding-left: 20px;
-}
-
-.left-column {
-	float: left;
-	width: 75%;
-}
-
-.img-icon {
-	margin-left: -2px;
-	margin-top: -10px;
-}
-
-.btn {
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-}
 
 
-.btnComment {
-	background-color: transparent;
-	border: none;
-	position: absolute;
-}
 
 .card {
 	background-color: white;
@@ -62,12 +36,13 @@ img {
 
 /* footer */
 
-.social-section i{
-	font-size:25px;
+.social-section i {
+	font-size: 25px;
 	margin: 10px;
 }
-button{
-	background:transparent;
+
+button {
+	background: transparent;
 	border: none;
 }
 
@@ -103,18 +78,25 @@ footer::after {
 	margin: 10px;
 }
 
+#btnReadMore {
+	width: 20%;
+	height: 30px;
+	border: 1px solid white;
+	color: rgb(8, 247, 8);
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: left;
+}
+
+#btnReadMore:hover {
+	background-color: rgba(255, 255, 255, 0.616);
+	box-shadow: 5px 10px 20px rgb(235, 226, 226);
+}
+
 #more {
 	display: none;
 }
-
-#myBtn {
-	border-radius: 5px;
-	border: none;
-	width: 130px;
-	cursor: pointer;
-	background-color: pink;
-}
-
 
 
 /* Column system
@@ -324,25 +306,26 @@ button .close {
 		color: rgb(221, 17, 228);
 		cursor: pointer;
 		padding: 18px;
-		width: 100%;
+		width: 50%;
 		border: none;
 		text-align: center;
 		outline: none;
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
-		padding: 0 18px;
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
+
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
 
 	.menu-toggle {
 		display: none;
@@ -351,7 +334,7 @@ button .close {
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 
 	.imageBlueMan img {
@@ -376,21 +359,27 @@ button .close {
 		height: 125px;
 		color: white;
 	}
-	.isi-comment a{
+
+	.isi-comment a {
 		color: white;
 	}
-	.fa-twitter{
-		color:rgb(0, 255, 221);
+
+	.fa-twitter {
+		color: rgb(0, 255, 221);
 	}
-	.fa-facebook{
+
+	.fa-facebook {
 		color: rgb(234, 234, 245);
 	}
-	.fa-linkedin{
-		color:blue;
+
+	.fa-linkedin {
+		color: blue;
 	}
-	.fa-google{
-		color:red;
+
+	.fa-google {
+		color: red;
 	}
+
 	/* According ViewUs */
 	.accordion {
 		background-color: rgba(3, 7, 2, 0.562);
@@ -404,21 +393,23 @@ button .close {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
-	  .panel p{
-		color:white;
-	  }
+	}
+
+	.panel p {
+		color: rgb(49, 248, 9);
+	}
 
 	/* aside / sidebar */
 
@@ -512,23 +503,24 @@ button .close {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
 
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 
 	[class^=col-] {
@@ -558,8 +550,14 @@ button .close {
 /* AboutPage */
 .contenAbout {
 	background-color: rgb(191, 191, 207);
-	width: 100%;
+	width: 60%;
 	height: 450px;
+	margin: 0 auto;
+}
+
+.text-about {
+	color: white;
+	text-align: justify;
 }
 
 .address {
@@ -648,18 +646,19 @@ p:last-of-type {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
 
 	p {
 		font-size: 1.2rem;
@@ -669,7 +668,7 @@ p:last-of-type {
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		
+
 	}
 
 	.title {
@@ -703,18 +702,19 @@ p:last-of-type {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
 
 	.button {
 		font-size: 1.5rem;
@@ -723,7 +723,7 @@ p:last-of-type {
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 }
 
@@ -811,23 +811,24 @@ nav a:focus {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
 
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 
 	nav {
@@ -882,18 +883,20 @@ nav a:focus {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
+
 	.home-hero {
 		height: 100vh;
 		padding-top: 35vh;
@@ -902,7 +905,7 @@ nav a:focus {
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 }
 
@@ -935,6 +938,7 @@ nav a:focus {
 	h1 {
 		font-size: 2rem;
 	}
+
 	.accordion {
 		background-color: rgba(3, 7, 2, 0.562);
 		color: rgb(221, 17, 228);
@@ -947,23 +951,24 @@ nav a:focus {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
 
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 
 	.home-about-textbox {
@@ -984,7 +989,7 @@ nav a:focus {
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 
 	.home-about {
@@ -1059,18 +1064,19 @@ nav a:focus {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
 
 	.port-item {
 		width: 50%;
@@ -1080,7 +1086,7 @@ nav a:focus {
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 }
 
@@ -1098,18 +1104,19 @@ nav a:focus {
 		font-size: 15px;
 		transition: 0.4s;
 		margin: 10px;
-	  }
-	  
-	  .active, .accordion:hover {
-		background-color: #ccc; 
-	  }
-	  
-	  .panel {
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	.panel {
 		padding: 0 18px;
 		display: none;
 		background-color: white;
 		overflow: hidden;
-	  }
+	}
 
 	.port-item {
 		width: 33.3333334%;
@@ -1119,7 +1126,7 @@ nav a:focus {
 	.imageHeader img {
 		position: absolute;
 		margin: 0 auto;
-		left: -20px;
+
 	}
 
 	.port-desc {
